@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/for_skull.unity
+  isLoaded: 1
+  isActive: 1
