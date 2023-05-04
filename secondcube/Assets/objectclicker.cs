@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class objectclicker : MonoBehaviour {
 public GameObject h;
 public GameObject ij;
 public string ff;
+//private Text UIText;
 int click=0;
 private AudioSource[] allAudioSources;
 private List<string> objlist=new List<string>();
-private GameObject Slot1;
-private int SelectedSlot = 1;
 
 
 	// Use this for initialization
@@ -67,6 +67,8 @@ private int SelectedSlot = 1;
 
 			//ij.GetComponent<Renderer> ().material.color = Color.blue;
 			h.GetComponent<AudioSource>().Play();
+			//UIText=h.GetComponent<UnityEngine.UI.Text>().text;
+			//Debug.Log(UIText);
 
 			h.GetComponent<Renderer> ().material.color = Color.green;
 			}
@@ -78,10 +80,18 @@ private int SelectedSlot = 1;
 		}	}
 		}
 		private GUIStyle guiStyle = new GUIStyle(); 
+		
 	void OnGUI(){
-		guiStyle.fontSize = 40;
+		guiStyle.wordWrap = true;
+		guiStyle.fontSize = 20;
+		guiStyle.normal.textColor=Color.white;
+		int windowWidth = 200;
+         int windowHeight = 200;
+         int x = (Screen.width - windowWidth) / 2;
+         int y = (Screen.height - windowWidth) / 2;
 		//guiStyle.fontColor=Color.white;
-		   GUI.Label(new Rect(40, 40, 40, 40),ff,guiStyle);
+		   GUI.Label(new Rect(Screen.width - 200,Screen.height-320,200,80),ff,guiStyle);
+		   //GUI.Box(new Rect(Screen.width/2-60, 20 , 400, 40),ff,guiStyle );
     }}
 	
 

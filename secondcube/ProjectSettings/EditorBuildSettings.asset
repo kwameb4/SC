@@ -17,13 +17,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/s2.unity
     guid: 4da85546432eee54f84b16c358d21a4c
-  - enabled: 0
+  - enabled: 1
     path: Assets/for_skull.unity
     guid: 9aa89c1403433ec44acd0cb5cb92cd96
-  - enabled: 0
+  - enabled: 1
     path: Assets/for_spine.unity
     guid: 8c382b88a4a13a94ba49f67b0dcc8d4f
-  - enabled: 1
-    path: Assets/AR_computer_training 1.unity
-    guid: 0a178b65db586f64c8db3836509b6681
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
